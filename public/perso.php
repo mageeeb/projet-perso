@@ -90,5 +90,7 @@ mysqli_free_result($queryMail);
 # fermeture de connexion  (bonnes pratiques)
 mysqli_close($db);
 
+//---------------------l'accée aux autres pages-------
+
 # appel de la vue
-include_once '../vue/persoview.php';
+include_once '../public/persoview.php';

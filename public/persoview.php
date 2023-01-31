@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,10 @@
     <title>Perso</title>
 </head>
 <body>
+
+<?php
+include_once "../public/menu.php"
+?>
     <div class="man">
         <p>Word Search Solver
             Our dynamic Word Search Solver lets you enter in your entire board via copy and paste. You can then enter your word bank and the solver will find all your words. It can even find words not listed in the answer bank. Sometimes the longest words are the hardest to find!
