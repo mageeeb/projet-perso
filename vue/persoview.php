@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/perso.css">
+  
+   
     <title>Perso</title>
 </head>
 <body>
 
 <?php
-include_once "../public/menu.php"
+include_once "../pages/menu.php"
 ?>
     <div class="man">
         <p>Word Search Solver
