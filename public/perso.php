@@ -91,6 +91,32 @@ mysqli_free_result($queryMail);
 mysqli_close($db);
 
 //---------------------l'accée aux autres pages-------
+if(isset($_GET['p'])){
+    
+    
+    switch($_GET['p']){
+        case 'home':
+            include '../vue/persoview.php';
+            break;
+        case 'expo':
+            include "../pages/exposition.php";
+            break;
+        case 'propos':
+            include 'pages/apropos.php';
+            break;
 
+            case 'centre':
+                include 'pages/centre.php';
+                break;
+            
+        
+        default:
+            include_once "pages/homepage.php";
+    }
+
+   
+}else{
+    
+    include "../vue/persoview.php";
+}
 # appel de la vue
-include_once '../public/persoview.php';
