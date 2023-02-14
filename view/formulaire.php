@@ -1,3 +1,7 @@
+<?php
+# débugogage de la variable POST
+// var_dump($_POST);   
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,16 +10,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mail</title>
-    <link rel="stylesheet" href="../public/perso.css">
-    <link rel="stylesheet" href="../public/captcha.css">
-    <script src="../public/js/captcha.js"></script>
+    <link href='css/style.css' rel='stylesheet' />
+    <link href='css/captcha.css' rel='stylesheet' />
+    <script src="js/captcha.js"></script>
 </head>
 
 <body onload="captchaCF2M(redirectionDuckduck, 7);">
 
     <header id="header">
         <h1>Livre d'or</h1>
-        <img src="../img/email.png" alt="">
+        <img src="../public/img/email.png" alt="">
 
         <div class="formulaire">
             <?php
@@ -79,7 +83,12 @@
 
         </div>
 
-        
+        <div>
+            <p id="captcha"></p></br></br>
+            <input id="captchaInput" type="text" placeholder="Entrez le captcha"><span></span></br></br>
+
+            <button id="captchaRefresh" type="button">Refresh</button>
+        </div>
         <h3></h3>
         <?php
         # pas de mail

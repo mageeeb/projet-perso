@@ -10,7 +10,7 @@
 <body>
 
 <?php
-include "../pages/menu.php"
+include "menu.php"
 ?>
     <header class="man">
         <div class="tete">

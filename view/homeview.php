@@ -13,7 +13,7 @@
 <body>
 
 <?php
-include_once "../pages/menu.php"
+include_once "menu.php";
 ?>
     <div class="man">
         <p>Word Search Solver
