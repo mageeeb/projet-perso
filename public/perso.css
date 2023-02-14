@@ -27,9 +27,12 @@ p{
     background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    margin-top: -25px;
 }
 
 /*--------------------navbar-------------------------------*/
+
+
 nav{
 	display: flex;
 	align-items: center;
@@ -109,6 +112,21 @@ nav ul li a:hover{
 
 }
 
+.leform nav{
+    background-color: #56add5;
+}
+
+
+#header img{
+    width: 250px;
+}
+
+.formulaire{
+    display: flex;
+    position: relative;
+    top: 30px;
+}
+
 
 
 #monFormulaire{
@@ -173,20 +191,10 @@ p{
 	color: black;
 }
 
-/*------------------captcha-------------*/
-#captchaRefresh{
-    position: relative;
-    right: 1.5px;
-    top: -30px;
-}
+/*------------------Formulaire-------------*/
 
-#captchaInput{
-    position: relative;
-    left: 1.5em;
-    width: 150px;
-    top: 80px;
-    
-}
+
+
 
 h4{
     text-align: center;
@@ -266,6 +274,19 @@ button:hover {
 }
 h3{
     margin-top: 40px;
+}
+
+.home{
+    position: relative;
+    float: left;
+    font-size: 5em;
+    color: #56add5;
+    top: 2em;
+    left: 2em;
+}
+
+i{
+    color: #56add5;
 }
 
 /*-----------------------------------exposition----------------*/

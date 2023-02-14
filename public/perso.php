@@ -89,34 +89,37 @@ $responseMail = mysqli_fetch_all($queryMail, MYSQLI_ASSOC);
 mysqli_free_result($queryMail);
 # fermeture de connexion  (bonnes pratiques)
 mysqli_close($db);
-
-//---------------------l'accée aux autres pages-------
+# l'appel des pages en passant par le CF
 if(isset($_GET['p'])){
     
     
     switch($_GET['p']){
         case 'home':
-            include '../vue/persoview.php';
+            include "../view/homeview.php";
             break;
-        case 'expo':
-            include "../pages/exposition.php";
+        case 'travail':
+            include '../view/travaux.php';
             break;
-        case 'propos':
-            include 'pages/apropos.php';
+        case 'link':
+            include '../view/liens.php';
+            break;
+        case 'tuto':
+            include '../view/tuto.php';
             break;
 
-            case 'centre':
-                include 'pages/centre.php';
-                break;
-            
+        case 'cv':
+            include '../view/cv.php';
+            break;
+        case 'form':
+            include '../view/formulaire.php';
+            break;
         
         default:
-            include_once "pages/homepage.php";
+            include_once "../view/homeview.php";
     }
 
    
 }else{
     
-    include "../vue/persoview.php";
+    include_once "../view/homeview.php";
 }
-# appel de la vue
