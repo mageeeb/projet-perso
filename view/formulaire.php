@@ -1,6 +1,5 @@
 <?php
-# débugogage de la variable POST
-// var_dump($_POST);   
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,16 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mail</title>
-    <link href='css/style.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../public/perso.css">
     <link href='css/captcha.css' rel='stylesheet' />
     <script src="js/captcha.js"></script>
 </head>
 
 <body onload="captchaCF2M(redirectionDuckduck, 7);">
+<?php
+include "menu.php"
+?>
 
     <header id="header">
-        <h1>Livre d'or</h1>
-        <img src="../public/img/email.png" alt="">
+        <h1>Un petit message!</h1>
+        <img src="../img/email.png" alt="">
 
         <div class="formulaire">
             <?php

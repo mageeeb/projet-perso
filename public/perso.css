@@ -301,3 +301,49 @@ h5{
 .tete{
     display: flex;
 }
+
+/*--------------------Link-------------------*/
+.card-container {
+    position: relative;
+    width: 300px;
+    height: 225px;
+    perspective: 1000px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 2s ease-in-out;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card .side {
+    background: #EEEEEE;
+    color: #0088cc;
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.side h3 {
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+.side p {
+    line-height: 20px;
+}
+
+
