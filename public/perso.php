@@ -31,7 +31,7 @@ if(isset($_GET['p'])){
             break;
         
         default:
-            include_once "../view/homeview.php";
+            include_once "../view/404.php";
     }
 
    

@@ -146,6 +146,9 @@ h2{
 
 h1{
     margin-bottom: -10px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
 }
 
 #message{
@@ -302,12 +305,17 @@ h5{
     display: flex;
 }
 
-/*--------------------Link-------------------*/
+/*--------------------Travaux-------------------*/
 .card-container {
     position: relative;
     width: 300px;
     height: 225px;
     perspective: 1000px;
+    left: 10em;
+    top: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    
 }
 
 .card {
@@ -315,6 +323,7 @@ h5{
     width: 100%;
     transform-style: preserve-3d;
     transition: all 2s ease-in-out;
+    
 }
 
 .card:hover {
@@ -345,5 +354,26 @@ h5{
 .side p {
     line-height: 20px;
 }
+
+.side img{
+    width: 80%;
+    height: auto;
+    margin: 1%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    
+    /*filter: grayscale(100%);
+     /*width:100%;*/
+
+}
+
+/*--------------------------------404-----------------*/
+h6{
+    width: 250px;
+  font-size: 20px;
+}
+  
+
 
 
