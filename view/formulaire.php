@@ -126,6 +126,10 @@ include "menu.php"
 
     </header>
 
+    <?php
+        include "footer.php"
+    ?>
+
 </body>
 
 </html>

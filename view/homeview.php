@@ -184,6 +184,8 @@ include_once "menu.php";
            </p>
     </div>
 
-    
+    <?php
+        include "footer.php"
+    ?>
 </body>
 </html>
