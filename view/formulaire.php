@@ -111,7 +111,7 @@
                     <?php
                     if (empty($mess)) :
                     ?>
-                        <h3><?= $message1 ?></h3>
+                        <h3><?= $message?></h3>
                     <?php
                     endif;
                     ?>
