@@ -13,7 +13,7 @@
     <title>Message</title>
 </head>
 
-<body onload="captchaCF2M(redirectionDuckduck, 7);">
+<body>
 <?php
 include "menu.php"
 ?>
