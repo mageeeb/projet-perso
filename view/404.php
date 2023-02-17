@@ -15,6 +15,10 @@
     <h1>Erreur <span>404</span></h1>
     <h1>Attention cette page n'existe pas</h1>
     <h1>Retour à la <a href="../public/perso.php">page d'accueil</a> </h1>
+
+    <?php
+        include "footer.php"
+    ?>
   
    
 </body>

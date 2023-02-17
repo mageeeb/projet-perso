@@ -23,7 +23,7 @@
                     
                 </div>
 			</div>
-            <br />
+           
 			<div class="card">
 				<div class="side">
                     <img src="../img/bronks.webp" alt="bronks">
@@ -43,7 +43,32 @@
                     
                 </div>
 			</div>
-		</div>
+
+            <div class="card">
+				<div class="side">
+                    <img src="../img/tomasz.jpg" alt="Brut">
+                </div>
+				<div class="side back">
+                    <h3>cliquer sur le <a href="https://2022.webdev-cf2m.be/magib/prefo/exposition/visite.html"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'aplication de figma.</h3>
+                    
+                </div>
+			</div>
+
+            <div class="card">
+				<div class="side">
+                    <img src="../img/brut.jpg" alt="Brut">
+                </div>
+				<div class="side back">
+                    <h3>cliquer sur le <a href="https://2022.webdev-cf2m.be/magib/prefo/exposition/visite.html"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'aplication de figma.</h3>
+                    
+                </div>
+			</div>
+	</div>
+
+      
     
 </body>
+<?php
+        include "footer.php"
+    ?>
 </html>
