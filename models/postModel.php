@@ -86,5 +86,5 @@ $responseMail = mysqli_fetch_all($queryMail, MYSQLI_ASSOC);
 
 # on efface les données récupérées pas un SELECT (bonnes pratiques)
 mysqli_free_result($queryMail);
-# fermeture de connexion  (bonnes pratiques)
+# fermeture de connexion
 mysqli_close($db);
