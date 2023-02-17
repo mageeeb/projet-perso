@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/perso.css">
+    <link rel="stylesheet" href="../public/darkLightMode.css">
+    <script src="../public/js/darkLightMode.js"></script>
     <title>Liens</title>
 </head>
 <body>
@@ -49,20 +51,12 @@
                     <img src="../img/tomasz.jpg" alt="Brut">
                 </div>
 				<div class="side back">
-                    <h3>cliquer sur le <a href="https://2022.webdev-cf2m.be/magib/prefo/exposition/visite.html"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'aplication de figma.</h3>
+                    <h3>cliquer sur le <a href="https://christianberst.com/artists/tomasz-machcinski"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'aplication de figma.</h3>
                     
                 </div>
 			</div>
 
-            <div class="card">
-				<div class="side">
-                    <img src="../img/brut.jpg" alt="Brut">
-                </div>
-				<div class="side back">
-                    <h3>cliquer sur le <a href="https://2022.webdev-cf2m.be/magib/prefo/exposition/visite.html"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'aplication de figma.</h3>
-                    
-                </div>
-			</div>
+            
 	</div>
 
       

@@ -308,14 +308,14 @@ h5{
 /*--------------------Travaux-------------------*/
 .card-container {
     position: relative;
-    width: 300px;
-    height: 225px;
+    width: 750px;
+    height: 500px;
     perspective: 1000px;
-    left: 10em;
-    top: 120px;
+    left: 34em;
+    top: 100px;
+    grid-template-columns: 1fr 1fr;
     display: grid;
-    flex-flow: row wrap;
-    
+    gap: 30px;
 }
 
 .card {
@@ -340,6 +340,8 @@ h5{
     position: absolute;
     overflow: hidden;
     backface-visibility: hidden;
+    
+   
 }
 
 .card .back {
@@ -376,17 +378,24 @@ h6{
 
 /*-----------------------footer------------------------*/
 .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: black;
-    position: relative;
-    top: 150px;
+    color: white;
     text-align: center;
-
+    height: 150px;
 }
 
 .footer h5{
-    padding: 80px;
+    padding: 60px;
 }
-  
+
+/*---------------cv-------------------------------------*/
+  .cv{
+    text-align: center;
+  }
 
 
 
