@@ -257,7 +257,7 @@ button:hover {
     clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
 
     .col-25,
@@ -358,12 +358,13 @@ h5{
 }
 
 .side img{
-    width: 80%;
-    height: auto;
+    width: 70%;
+    height: 80%;
     margin: 1%;
     border: 2px solid black;
     border-radius: 10px;
     padding: 2px;
+    margin-top: 20px;
     
     /*filter: grayscale(100%);
      /*width:100%;*/
@@ -396,6 +397,45 @@ h6{
   .cv{
     text-align: center;
   }
+
+  /*--------------------Français----------------------*/
+  .brut{
+    text-align: center;
+  }
+  .brut img{
+    width: 200px;
+    position: relative;
+    top: 25px;
+  }
+
+  #contenu {
+    grid-area: contenu;
+    align-self: start;
+    background-color: #EEEEEE;
+    width: 100%;
+    position: relative;
+    left: 25px;
+    top: 80px;
+    bottom: 150px;
+    display: flex;
+   
+}
+
+#contenu img {
+    float:left;
+    width:150px;
+    height:auto;
+    font-weight: 300px;
+    margin-right: 1em;
+}
+
+#contenu h5 {
+    text-align: justify;
+    color: black;
+    width: 70%;
+    
+}
+
 
 
 

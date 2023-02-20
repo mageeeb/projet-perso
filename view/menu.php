@@ -7,6 +7,7 @@
 				<li class="nav-item"><a class="nav-link" href="?p=link">Mes liens</a></li>
 				<li class="nav-item"><a class="nav-link" href="?p=tuto">Mes tutoriels</a></li>
 				<li class="nav-item"><a class="nav-link" href="?p=cv">Mon CV</a></li>
+				<li class="nav-item"><a class="nav-link" href="?p=fr">Français</a></li>
 					
 				 </ul>
 				<a href="?p=form" class="btn">M'envoyer un message</a>

@@ -51,7 +51,7 @@
                     <img src="../img/brut.jpg" alt="Brut">
                 </div>
 				<div class="side back">
-                    <h3>cliquer sur le <a href="https://christianberst.com/artists/tomasz-machcinski"> <span>lien</span></a> pour accéder au site de Tomasz Machcinski qui est un artiste qui m'a marqué lors de notre visite à Brut. (cours Français)</h3>
+                    <h3>cliquer sur le <a class="nav-link" href="?p=fr">  <span>lien</span></a> pour accéder au site de Tomasz Machcinski qui est un artiste qui m'a marqué lors de notre visite à Brut. (cours Français)</h3>
                     
                 </div>
 			</div>
