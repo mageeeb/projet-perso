@@ -29,6 +29,10 @@ if(isset($_GET['p'])){
         case 'form':
             include '../view/formulaire.php';
             break;
+
+        case 'fr':
+                include '../view/courFrance.php';
+                break;
         
         default:
             include_once "../view/404.php";
