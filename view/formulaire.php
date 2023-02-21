@@ -1,37 +1,31 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+    <link rel="stylesheet" href="../public/captcha.css">
     <link rel="stylesheet" href="../public/perso.css">
     <link rel="stylesheet" href="../public/darkLightMode.css">
     <script src="../public/js/darkLightMode.js"></script>
-    <title>Message</title>
+    <script src="../public/js/js/captcha.js"></script>
 </head>
 
-<body>
+<body onload="captchaCF2M(redirectionDuckduck, 7);">
 <?php
-include "menu.php"
+    include "menu.php"
 ?>
 
-    <header id="header">
-        <h1>Un petit message!</h1>
-        <img src="../img/email.png" alt="">
+<header id="header">
+        <h1>Laissez-moi un message</h1>
+        
+       
 
         <div class="formulaire">
-            <?php
-            # si on a un message
-            if (isset($message)) :
-                # on l'affiche
-            ?>
-                <h4><?= $message ?></h4>
-            <?php
-            endif;
-            ?>
+        <img src="../img/email.png" alt="">
+         
             <form id='monFormulaire' name='lemail' action='' method="POST">
 
                 <div class="row">
@@ -72,7 +66,7 @@ include "menu.php"
                     </div>
                 </div>
              
-                <p class="p1">(*) ce champ est obligatoire</p>
+                <h4>(*) ce champ est obligatoire</h4>
                 <div class="row">
                     <div class="submit">
                         <button id="captchaValidate" type="button">Valider</button>
@@ -84,12 +78,15 @@ include "menu.php"
 
         </div>
 
-        <div>
-            <p id="captcha"></p></br></br>
+        <br><br><br><br>
+        <div id="captcha"> 
+
+        </div>
+            
             <input id="captchaInput" type="text" placeholder="Entrez le captcha"><span></span></br></br>
 
             <button id="captchaRefresh" type="button">Refresh</button>
-        </div>
+        
         <h3></h3>
         <?php
         # pas de mail
@@ -108,14 +105,8 @@ include "menu.php"
             ?>
                 <div class="text">
                     <h4><?= $item['firstname'] ?> à envoyé le message le <?= $item['datemessage'] ?></h4>
-                    <p class="p2"><?=$item['message']?></p>
-                    <?php
-                    if (empty($mess)) :
-                    ?>
-                        <h3><?= $message?></h3>
-                    <?php
-                    endif;
-                    ?>
+                    <h5><?=$item['message']?></h5>
+                  
                 </div>
 
         <?php
@@ -124,10 +115,6 @@ include "menu.php"
         ?>
 
     </header>
-
-    <?php
-        include "footer.php"
-    ?>
 
 </body>
 

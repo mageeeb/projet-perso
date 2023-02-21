@@ -56,10 +56,8 @@ if (isset($_POST['firstname'], $_POST['usermail'], $_POST['message'])) {
         # sinon erreur
     } else {
         # création de la variable $message
-        $message = "Il y a eu un problème lors de votre inscription, veuillez réessayer";
+        $message = " ";
     }
-}else {
-    $message = '';
 }
 
 # chargement de tous les mails
@@ -86,5 +84,5 @@ $responseMail = mysqli_fetch_all($queryMail, MYSQLI_ASSOC);
 
 # on efface les données récupérées pas un SELECT (bonnes pratiques)
 mysqli_free_result($queryMail);
-# fermeture de connexion
+# fermeture de connexion  (bonnes pratiques)
 mysqli_close($db);
