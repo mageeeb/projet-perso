@@ -11,15 +11,19 @@
     <link rel="stylesheet" href="../public/darkLightMode.css">
     <script src="../public/js/darkLightMode.js"></script>
     <script src="../public/js/js/captcha.js"></script>
+    <script src="https://kit.fontawesome.com/e95a7f8c2a.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="captchaCF2M(redirectionDuckduck, 7);">
-<?php
-    include "menu.php"
-?>
+
 
 <header id="header">
-        <h1>Laissez-moi un message</h1>
+    <div class="form">
+    <h1>Laissez-moi un message ou retour vers <a class="nav-link" href="?p=home"><i class="fa fa-home" style="font-size:24px;color:red"></i></a></h1>
+
+
+    </div>
+       
         
        
 
