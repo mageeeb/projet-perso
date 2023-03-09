@@ -26,8 +26,8 @@ if(isset($_GET['p'])){
         case 'cv':
             include '../view/cv.php';
             break;
-        case 'form':
-            include '../view/formulaire.php';
+        case 'admin':
+            include '../view/admin.php';
             break;
 
         case 'fr':
