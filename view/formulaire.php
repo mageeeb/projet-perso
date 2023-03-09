@@ -72,7 +72,7 @@ include "menu.php"
                     </div>
                 </div>
              
-                <p class="p1">(*) ce champ est obligatoire</p>
+                <h6>(*) ce champ est obligatoire</h6>
                 <div class="row">
                     <div class="submit">
                         <button id="captchaValidate" type="button">Valider</button>
@@ -88,9 +88,9 @@ include "menu.php"
             <p id="captcha"></p></br></br>
             <input id="captchaInput" type="text" placeholder="Entrez le captcha"><span></span></br></br>
 
-            <button id="captchaRefresh" type="button">Refresh</button>
+            
         </div>
-        <h3></h3>
+       
         <?php
         # pas de mail
         if (empty($nbMail)) :

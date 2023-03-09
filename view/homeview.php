@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../public/perso.css">
     <link rel="stylesheet" href="../public/darkLightMode.css">
     <script src="../public/js/darkLightMode.js"></script>
+    <script src="https://kit.fontawesome.com/e95a7f8c2a.js" crossorigin="anonymous"></script>
   
    
     <title>Home</title>
@@ -183,7 +184,48 @@ include_once "menu.php";
           
            </p>
     </div>
-
+	<div class="service">
+			<div class="title">
+				<h2>Mon Parcours</h2>
+			</div>
+	
+			<div class="box">
+				<div class="trav">
+					<i class="fas fa-desktop"></i>
+					<h5>Maintenance Informatique</h5>
+					<div class="pra">
+						<h4>j'ai fais de la Maintenance informatique pendant 3 ans. Mes taches étaient
+							la réparation des PC et du réseau en entreprise.</h4>
+	
+						
+					</div>
+				</div>
+	
+				<div class="trav">
+					<i class="far fa-user"></i>
+					<h5>Conseillé Technique</h5>
+					<div class="pra">
+                    <h4>j'ai été conseillé technique dans un centre d'appel où 
+							mes taches étaient de guider les clients à recuperer leurs 
+							services informatique (Internet, TV). </h4>
+	
+						
+					</div>
+				</div>
+	
+				<div class="trav">
+					<i class="fas fa-database"></i>
+					<h5> Web Dev</h5>
+					<div class="pra">
+						<h4>Fan de nouvelles technologies, j'ai choisi de faire cette 
+							formation car mon rêve est de creer et de developper de nouvelles 
+							choses et pourquoi pas contribuer au futur!!</h4>
+	
+						
+					</div>
+				</div>
+			</div>
+		</div>
 
 
     <?php

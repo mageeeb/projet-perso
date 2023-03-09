@@ -1,90 +1,54 @@
 <?php
 
-# Essai de connexion
-try {
-    # connexion mysqli
-    $db = mysqli_connect(DB_HOST, DB_LOGIN, DB_PWD, DB_NAME, DB_PORT);
-    # charset
-    mysqli_set_charset($db, DB_CHARSET);
+function postHomepageAll($db){
+    $sql = "SELECT p.id, p.title, LEFT(p.content, 255) AS contentshort, p.datecreate, u.id AS iduser, u.userscreen, 
+    GROUP_CONCAT(c.id) AS idcategory, 
+    GROUP_CONCAT(c.title SEPARATOR '||0||') AS titlecategory
+    FROM post p
+        INNER JOIN user u
+            ON p.user_id = u.id
+        LEFT JOIN category_has_post h 
+            ON p.id = h.post_id
+        LEFT JOIN category c 
+            ON c.id = h.category_id
+        #WHERE p.id =77
+            GROUP BY p.id
+    ORDER BY p.datecreate DESC;";
 
-    # capture l'erreur
-} catch (Exception $e) {
-
-    # arrêter le script et afficher l'erreur
-    exit(utf8_encode($e->getMessage()));
-}
-
-# si il existe les variables POST = formulaire envoyé
-if (isset($_POST['firstname'], $_POST['usermail'], $_POST['message'])) {
-    # traitement des champs contre injection SQL (Sécurité!)
-    $nom = htmlspecialchars(strip_tags(trim($_POST['firstname'])), ENT_QUOTES);
-    $mail = htmlspecialchars(strip_tags(trim($_POST['usermail'])), ENT_QUOTES);
-    // on pourrait vérifier si c'est un mail valide ( filter_var voir la fonction sur php.net)
-    $mess = htmlspecialchars(strip_tags(trim($_POST['message'])), ENT_QUOTES);
-    # débugage des champs traités
-    // var_dump($nom,$mail);
-        $nomnom =
-    htmlspecialchars(strip_tags(trim($_POST['lastname'])), ENT_QUOTES);
-    # si les champs sont bons (ici vide, donc une seule erreur générale)
-    if (!empty($nom) && !empty($mail)) {
-
-        # insertion partie SQL
-        $sqlInsert = "INSERT INTO `livreor` (`firstname`,`usermail`,`message`,`lastname`) VALUES ('$nom','$mail', '$mess', '$nomnom');";
-
-        # requête avec try catch
-        try {
-            # requête
-            mysqli_query($db, $sqlInsert);
-
-            # si pas d'erreur création du texte
-            $message = "Laissez-nous un message";
-            $message = "pas encore de message";
-        } catch (Exception $e) {
-            # echo $e->getCode();
-
-            # avec le code erreur SQL on peut faire des erreurs différentes, idem avec le $e->getMessage() etc...
-            if ($e->getCode() == 1406) {
-                # création de l'erreur
-                $message = "Pas encore de message";
-            } elseif ($e->getCode() == 1062) {
-                # création de l'erreur
-                $message = "Vous êtes déjà inscrit avec ce mail";
-            }
-        }
-
-
-        # sinon erreur
-    } else {
-        # création de la variable $message
-        $message = "Il y a eu un problème lors de votre inscription, veuillez réessayer";
+    try{
+        $query = mysqli_query($db,$sql);
+    }catch(Exception $e){
+        die($e->getMessage());
     }
-}else {
-    $message = '';
+    return mysqli_fetch_all($query,MYSQLI_ASSOC);
 }
 
-# chargement de tous les mails
+// public detail Post by id
+function postOneById($db,$id){
+    // si mauvais format : 0
+    $id = (int) $id;
 
-// requête en variable texte contenant du MySQL
-$sqlMail = "SELECT `firstname`, `usermail`, `message`,`datemessage`,`lastname` FROM `livreor` ORDER BY `datemessage` DESC; ";
+    $sql = "SELECT p.id, p.title, p.content, p.datecreate, 
+    u.id AS iduser, u.userscreen, 
+    GROUP_CONCAT(c.id) AS idcategory, 
+    GROUP_CONCAT(c.title SEPARATOR '||0||') AS titlecategory
+    FROM post p
+        INNER JOIN user u
+            ON p.user_id = u.id
+        LEFT JOIN category_has_post h 
+            ON p.id = h.post_id
+        LEFT JOIN category c 
+            ON c.id = h.category_id
+        WHERE p.id = $id
+            GROUP BY p.id;";
 
-// exécution de la requête avec un try / catch
-try {
-    $queryMail = mysqli_query($db, $sqlMail);
-} catch (Exception $e) {
-    # arrêter le script et afficher l'erreur (de type SQL)
-    exit(utf8_encode($e->getMessage()));
+    try{
+        $query = mysqli_query($db,$sql);
+    }catch(Exception $e){
+        die($e->getMessage());
+    }
+    return mysqli_fetch_assoc($query);
 }
 
 
-# on compte le nombre de mails récupérés
-$nbMail = mysqli_num_rows($queryMail);
 
-# on convertit les mails récupérés en tableaux associatifs intégrés dans un tableau indexé
-$responseMail = mysqli_fetch_all($queryMail, MYSQLI_ASSOC);
-
-
-
-# on efface les données récupérées pas un SELECT (bonnes pratiques)
-mysqli_free_result($queryMail);
-# fermeture de connexion
-mysqli_close($db);

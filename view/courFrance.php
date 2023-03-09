@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="../public/perso.css">
     <link rel="stylesheet" href="../public/darkLightMode.css">
     <script src="../public/js/darkLightMode.js"></script>
+    <script src="https://kit.fontawesome.com/e95a7f8c2a.js" crossorigin="anonymous"></script>
     <title>Cours de français</title>
 </head>
 <body>
     <?php
     include "menu.php"
     ?>
+    <div class="courfr">
     <div class="brut">
     <h1>Bienvenu sur la visite que nous avons fait à l'exposition de Brut</h1>
     <img src="../img/brut.jpg" alt="">
@@ -43,6 +45,8 @@ Son travail dépeint une variété de personnages de différentes appartenances 
         </div>
         
     </div>
+    </div>
+   
 
     
 

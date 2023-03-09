@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="../public/perso.css">
     <link rel="stylesheet" href="../public/darkLightMode.css">
     <script src="../public/js/darkLightMode.js"></script>
+    <script src="https://kit.fontawesome.com/e95a7f8c2a.js" crossorigin="anonymous"></script>
     <title>Tuto</title>
 </head>
 <body>
 <?php
     include "menu.php"
     ?>
-            <div class="cv">
+    <div class="cv">
     <h1>Pas encore de contenu!</h1>
     <h1>TKT je travail dessus!</h1>
     <span style='font-size:100px;'>&#128513;</span>

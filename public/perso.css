@@ -37,10 +37,14 @@ nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 45px;
+	padding-top: 25px;
 	padding-left: 8%;
 	padding-right: 8%;
     background-color: black;
+    position: fixed;
+    width: 100%;
+    margin-top: -20px;
+    
 }
 
 span{
@@ -91,6 +95,58 @@ nav ul li a:hover{
 	letter-spacing: 1px;
 	cursor: pointer;
 }
+
+/*--------------------------------parcours---------------------------*/
+.service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+  }
+  .title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    width: 100%;
+  }
+  .trav {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .trav i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+  }
+  h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .pra p {
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+
+  
 
 /*------------------------------------formulaire------------------*/
 *{
@@ -192,6 +248,7 @@ p{
 .p1{
     padding: 15px;
 	color: black;
+    
 }
 
 /*------------------Formulaire-------------*/
@@ -201,6 +258,7 @@ p{
 
 h4{
     text-align: center;
+    color: white;
 }
 
 input[type=text],
@@ -306,6 +364,10 @@ h5{
 }
 
 /*--------------------Travaux-------------------*/
+.travail{
+    position: relative;
+    top: 8em;
+}
 .card-container {
     position: relative;
     width: 750px;
@@ -316,6 +378,7 @@ h5{
     grid-template-columns: 1fr 1fr;
     display: grid;
     gap: 30px;
+    
 }
 
 .card {
@@ -392,13 +455,42 @@ h6{
 .footer h5{
     padding: 60px;
 }
+.social {
+    display: flex;
+    position: relative;
+    left: 45%;
+  }
+  .social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .social a:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+  }
 
 /*---------------cv-------------------------------------*/
   .cv{
     text-align: center;
+    position: relative;
+    top: 8em;
   }
 
   /*--------------------Français----------------------*/
+  .courfr{
+    position: relative;
+    top: 8em;
+  }
+  
   .brut{
     text-align: center;
   }

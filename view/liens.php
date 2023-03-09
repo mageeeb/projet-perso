@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../public/perso.css">
     <link rel="stylesheet" href="../public/darkLightMode.css">
     <script src="../public/js/darkLightMode.js"></script>
+    <script src="https://kit.fontawesome.com/e95a7f8c2a.js" crossorigin="anonymous"></script>
     <title>Liens</title>
 </head>
 <body>
