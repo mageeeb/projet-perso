@@ -19,8 +19,8 @@ body{
 p{
     
     color: white;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 8px;
+    line-height:10px;
     background-image: url(../img/noir.jpg);
     background-size: cover;
     background-position: center;
@@ -56,7 +56,7 @@ span{
 nav ul li{
 	list-style-type: none;
 	display: inline-block;
-	padding: 10px  25px;
+	padding: 10px  20px;
 }
 nav ul li a{
 	color: white;
@@ -104,7 +104,7 @@ nav ul li a:hover{
   .title h2 {
     color: white;
     font-size: 75px;
-    /*width: 1130px;
+    /*width: auto;
     margin: 30px auto;*/
     text-align: center;
   }
@@ -386,7 +386,7 @@ h6{
 
 
 /*---------------------media screen-----------*/
-@media screen and (max-width:600px) {
+/*@media screen and (max-width:600px) {
    
     .man{
         background-color: black;
@@ -396,7 +396,9 @@ h6{
     }
 
     .man p {
-        font-size: 5px;
+        font-size: 3.5px;
+        line-height:7px;
+        margin-top: 10px;
     }
 
     p{
@@ -404,26 +406,39 @@ h6{
     }
 
     nav{
-        display: block;
+        
         padding-top: 25px;
         width: 100%;
     }
-    .btn{
-        background-color:#f9004d;
-        color: white;
-        text-decoration: none;
-        border: 2px solid transparent;
-        font-weight: bold;
-        border-radius: 30px;
-        transition: transform .4s; 
-    }
+
     nav ul li{
-        
-        display: flex;
-        
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px  5px;
+        font-size: 8px;
         
     }
 
+    nav ul li a:hover{
+       /* border: 1px solid transparent;
+        font-weight: bold;*/
+        padding: 1px 2px;
+        border-radius: 1px;
+        /*transition: transform .2s;
+    }
+    .btn{
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 7px; 
+        width: auto;
+        font-weight: 3px;
+    }
+
+    .logo{
+        
+        font-size: 8px;
+       
+    }
     .title h2 {
         color: white;
         font-size: 50px;
@@ -432,5 +447,126 @@ h6{
       } 
    
 }
+
+ 
+/*---------------france--------
+.title h2 {
+    color: white;
+    font-size: 50px;
+
+    text-align: center;
+  } 
+
+  .courfr{
+    position: relative;
+    top: 5em;
+    
+  }
+
+  h1{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+  }
+
+  .brut img{
+    width: 150px;
+    
+  }
+  #contenu {
+   
+    width: 98%;
+    
+   margin-left: -18px;
+   margin-top: -25px;
+    display: flex;
+    
+   
+}
+
+#contenu img {
+    float:left;
+    width:100px;
+    height:auto;
+    font-weight: 200px;
+    margin-right: 1em;
+}
+
+#contenu h5 {
+    
+    color: black;
+    width: 70%;
+    font-size: 13px;
+    padding: 0px 15px;
+    
+}
+
+h2{
+    font-size: 10px;
+}
+/*---------travail-----------
+  .travail{
+    position: relative;
+    top:10em;
+}
+
+.card-container{
+    position: relative;
+    left: 5em;
+    display: grid;
+    gap: 5px;
+    top: 8px;
+    width: 450px;
+    height: 300px;
+    
+}
+
+.side h3 {
+padding-top: 5px;
+line-height: 20px;
+font-size: 15px;
+}
+
+/*-------parcours-------
+.trav{
+text-align: center;
+}
+
+h5{
+    font-size: 15px;
+    text-align: center;
+    
+    
+}
+
+.box {
+min-height: 400px;
+
+/*margin-left: 20px;*/
+width: 95%;
+/*display: block;*/
+position: relative;
+left: 7em;
+
+
+}
+
+/*----------footer-----
+.social {
+position: relative;
+left: 43%;
+}
+
+.footer h4{
+font-size: 10px;
+}
+
+.social a {
+width: 35px;
+height: 35px;
+font-size: 15px;
+margin-top: 5px;
+}
+
 
 

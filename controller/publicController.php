@@ -1,40 +1,49 @@
 <?php
-/**
- * public
- */
-# debug with file's name
-# echo __FILE__;
 
-# récupération du menu
-$recupMenu = getAllCategoryMenu($db);
+// on veut se connecter
+if(isset($_POST['username'],$_POST['password'])){
+    $user = htmlspecialchars(strip_tags(trim($_POST['username'])),ENT_QUOTES);
+    $pwd = htmlspecialchars(strip_tags(trim($_POST['password'])),ENT_QUOTES);
 
-// si on est sur la partie "lire la suite" - détail de l'article
-if (isset($_GET['postId'])&&ctype_digit($_GET['postId'])) {
+    $connect = connectUsers($MysqliConnect,$user,$pwd);
 
-    $idpost = (int) $_GET['postId'];
-    # one article by id
-    $recupPost = postOneById($db,$idpost);
-
-    # ICI
-    var_dump($recupPost);
-
-// si on est sur la partie catégorie
-}elseif(isset($_GET['categoryId'])&&ctype_digit($_GET['categoryId'])){    
-
-
-// si on est sur la partie utilisateur
-}elseif(isset($_GET['userId'])&&ctype_digit($_GET['userId'])){ 
-
-
-// sinon on est sur l'accueil    
-}else{
-    # homepage's datas from MODEL
-    $recupAllPost = postHomepageAll($db);
-
-    # Post count
-    $nbPost = count($recupAllPost);
-
-
-    # homepage's view from VIEW
-    require "../view/publicView/publicHomepageView.php";
+    if(is_string($connect)){
+        $message = $connect;
+    }else{
+        header("Location: ./");
+        exit();
+    }
 }
+
+// on veut envoyer un message
+if(isset($_POST['messagesmail'],$_POST['messagestext'])){
+    $mail = filter_var(trim($_POST['messagesmail']),FILTER_VALIDATE_EMAIL);
+    $messageDB = htmlspecialchars(strip_tags(trim($_POST['messagestext'])),ENT_QUOTES);
+    $messageMail = strip_tags(trim($_POST['messagestext']));
+
+    if($mail==false || empty($messageDB)){
+        $message = "Mail et/ou message non valides, veuillez recommencer !";
+    }else{
+        $insert = insertMessages($MysqliConnect,$mail,$messageDB);
+        if(is_string($insert)){
+            $message = $insert;
+        }else{
+            $message = "Votre message à bien été envoyé!";
+
+            // pour l'admin du site
+            $mailMessage = "Mail envoyé par $mail \r\n \r\n " . $messageMail;
+            $envoi = sendMail(MAIL_FROM, MAIL_ADMIN, "Message sur votre site", $mailMessage);
+            
+            // pour l'utilisateur du site
+            $mailMessage = "Votre message a bien été envoyé sur le site http://mailmvc.webdev-cf2m.be/";
+            $envoi2 = sendMail(MAIL_FROM, $mail, "Message du site mailmvc.webdev-cf2m.be", $mailMessage);
+            
+            if ($envoi === true && $envoi2 == true) {
+                $message .= "<br>Félicitation";
+            }
+        }
+    }
+
+}
+
+require_once "../view/publicView.php";

@@ -1,4 +1,17 @@
 
+.mode{
+  padding: 5px;
+  margin-right: 15px;
+
+}
+
+.dark{
+  border-radius: 50px;
+}
+.light{
+  border-radius: 50px;
+}
+
 .dark-mode {
     background-color: black;
     color: white;
@@ -8,4 +21,14 @@
     color: black;
   }
 
+  @media screen and (max-width:600px){
+.mode{
+  
+  display: flex;
+  padding: 1px;
+}
+.dark {
+  font-weight: 3px;
+}
+  }
   
