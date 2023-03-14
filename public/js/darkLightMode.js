@@ -1,12 +1,14 @@
 function darkMode() {
-	var element = document.body;
-	var content = document.getElementById("DarkModetext");
-	element.className = "dark-mode";
-	content.innerText = "Dark Mode is ON";
-  }
-  function lightMode() {
-	var element = document.body;
-	var content = document.getElementById("DarkModetext");
-	element.className = "light-mode";
-	content.innerText = "Dark Mode is OFF";
-  }
+	document.body.classList.add("dark-mode");
+	localStorage.setItem("darkMode", "on")
+}
+
+function lightMode() {
+	document.body.classList.remove("dark-mode");
+	localStorage.setItem("darkMode", "off")
+}
+
+if (localStorage.getItem("darkMode")) {
+	body.style.backgroundColor = localStorage.getItem("dark-mode");
+	backgroundColor.value = localStorage.getItem("dark-mode");
+}

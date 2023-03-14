@@ -46,4 +46,4 @@ if(isset($_POST['messagesmail'],$_POST['messagestext'])){
 
 }
 
-require_once "../view/publicView.php";
+//require_once "../view/publicView.php";

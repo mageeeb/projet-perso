@@ -14,4 +14,4 @@ if(is_string($responseMessages)){
     $message = $responseMessages;
 }
 
-require_once "../view/privateView.php";
+//require_once "../view/privateView.php";

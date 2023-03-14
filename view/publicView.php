@@ -15,10 +15,8 @@
 
 <body>
 
-<?php
-include "menu.php"
-?>
-    <!-- Responsive navbar
+
+    <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="./">Mailmvc</a>
@@ -49,7 +47,7 @@ include "menu.php"
                 </ul>
             </div>
         </div>
-    </nav>-->
+    </nav>
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-8">
