@@ -63,6 +63,10 @@ if(isset($_GET['p'])){
         case 'fr':
                 include '../view/courFrance.php';
                 break;
+
+        case 'connect':
+                include '../view/publicView.php';
+                break;
         
         default:
             include_once "../view/404.php";
