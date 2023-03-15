@@ -10,35 +10,51 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/connect.css">
 </head>
 
 <body>
 
 
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="./">Mailmvc</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="./">Accueil</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Connexion</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <form name="connexion" action="" method="post">
-                                <li class="dropdown-item" style="display: flex;justify-content: space-around;">
+            
+
+            <!-----copie--->
+            <h1 style="text-align: center;" >Connectez-vous ou retourner à la <a href="./">page d'accueil</a> </h1>
+            <div class="login-box">
+ 
+  <<form name="connexion" action="" method="post">
+    <div class="user-box">
+      <input type="text" name="username" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" required="">
+      <label>Password</label>
+    </div><center>
+    <a href="#">
+           SEND
+       <span></span>
+    </a></center>
+  </form>
+</div>
+            
+    
+                       <!--  <ul aria-labelledby="navbarDropdown">
+                           <form name="connexion" action="" method="post">
+                                <li style="display: flex;justify-content: space-around;">
                                     <input name="username" class="dropdown-item" placeholder="Votre nom d'utilisateur" required></input>
                                 </li>
-                                <li class="dropdown-item" style="display: flex;justify-content: space-around;">
+                                <li style="display: flex;justify-content: space-around;">
                                     <input name="password" class="dropdown-item" placeholder="Votre mot de passe" required></input>
                                 </li>
 
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <hr>
                                 </li>
-                                <li class="dropdown-item" style="display: flex;justify-content: space-around;">
+                                <li  style="display: flex;justify-content: space-around;">
                                     <input type="submit" class="btn btn-primary"></input>
                             </form>
                         </ul>
@@ -52,9 +68,9 @@
         <div class="row">
             <div class="col-lg-8">
 
-                <!-- Post header-->
+                <!-- Post header
                 <header class="mb-4">
-                    <!-- Post title-->
+                    <!-- Post title
                     <h1 class="fw-bolder mb-1">MailMVC</h1>
                     <hr>
 
@@ -62,7 +78,7 @@
                 </header>
 
                 <form method="POST" action="" name="messages">
-                    <div class="mb-3">
+                  <!--  <div class="mb-3">-->
                         <?php
                         if (isset($message)) :
                         ?>
@@ -70,7 +86,20 @@
                         <?php
                         endif;
                         ?>
-                        <label for="exampleFormControlInput1" class="form-label">Votre adresse mail</label>
+                       <!-- <div class="contact-form">
+  <span class="heading">Contact Us</span>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" required="">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="messagesmail" required="">
+    <label for="message">Message:</label>
+    <textarea id="message" name="messagestext" required=""></textarea>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+                       <!-- <label for="exampleFormControlInput1" class="form-label">Votre adresse mail</label>
                         <input name="messagesmail" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
                     </div>
                     <div class="mb-3">
@@ -80,9 +109,7 @@
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-                <?php
-                var_dump($_SESSION, $_POST);
-                ?>
+                
 
 
             </div>
