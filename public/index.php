@@ -67,6 +67,10 @@ if(isset($_GET['p'])){
         case 'connect':
                 include '../view/publicView.php';
                 break;
+
+        case 'message':
+                include '../view/messageView.php';
+                break;
         
         default:
             include_once "../view/404.php";

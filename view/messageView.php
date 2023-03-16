@@ -22,27 +22,29 @@
             
 
             <!-----copie--->
-            <h1 style="text-align: center;" >Connection ou retour à la <a href="./">page d'accueil</a> </h1>
-            <div class="login-box">
- 
-  <form name="connexion" action="" method="post">
-    <div class="user-box">
-      <input type="text" name="username" required="">
-      <label>Username</label>
-    </div>
-    <div class="user-box">
-      <input type="password" name="password" required="">
-      <label>Password</label>
-    </div><center>
-    <a href="#">
-           SEND
-       <span></span>
-    </a></center>
-  </form>
-</div>
-            
-    
-                       <!--  <ul aria-labelledby="navbarDropdown">
+    <h1 style="text-align: center;">Connection ou retour à la <a href="./">page d'accueil</a> </h1>
+    <div class="login-box">
+
+        <!--<form name="connexion" action="" method="post">
+            <div class="user-box">
+                <input type="text" name="username" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required="">
+                <label>Password</label>
+            </div>
+            <center>
+                <a href="#">
+                    SEND
+                    <span></span>
+                </a>
+            </center>
+            </form>
+    </div>-->
+
+
+      <!--<ul aria-labelledby="navbarDropdown">
                            <form name="connexion" action="" method="post">
                                 <li style="display: flex;justify-content: space-around;">
                                     <input name="username" class="dropdown-item" placeholder="Votre nom d'utilisateur" required></input>
@@ -79,14 +81,14 @@
 
                 <form method="POST" action="" name="messages">
                   <!--  <div class="mb-3">-->
-                        <?php
-                        if (isset($message)) :
-                        ?>
-                            <button type="button" class="btn btn-warning"><?= $message ?></button><br>
-                        <?php
-                        endif;
-                        ?>
-                       <!-- <div class="contact-form">
+    <?php
+    if (isset($message)) :
+    ?>
+        <button type="button" class="btn btn-warning"><?= $message ?></button><br>
+    <?php
+    endif;
+    ?>
+    <!-- <div class="contact-form">
   <span class="heading">Contact Us</span>
   <form>
     <label for="name">Name:</label>
@@ -114,10 +116,56 @@
 
             </div>
         </div>
-    </div>
-    <?php
-    include "footer.php"
-    ?>
+    </div>-->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="firstname">Prénom *:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="firstname" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nom">Nom :</label>
+
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nom" name="lastname">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email"> mail *:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="mail" name="messagesmail" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="msg">Votre message *:</label>
+                    </div>
+
+                    <div class="col-75">
+                        <textarea id="msg" name="messagestext" cols="60" rows="5" maxlength="600"></textarea>
+                    </div>
+                </div>
+             
+                <p class="p1">(*) ce champ est obligatoire</p>
+                <div class="row">
+                    <div class="submit">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+
+    
+    
 </body>
 
 </html>

@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="../public/darkLightMode.css">
     <script src="../public/js/darkLightMode.js"></script>
     <script src="https://kit.fontawesome.com/e95a7f8c2a.js" crossorigin="anonymous"></script>
-    <title>Liens</title>
+    <title>travaux</title>
 </head>
 <body>
     <?php
     include "menu.php"
     ?>
     <div class="travail">
-    <h1>Voici mes liens </h1>
+    <h1>Voici mes travaux effectué </h1>
 
 <div class="card-container">
         <div class="card">
