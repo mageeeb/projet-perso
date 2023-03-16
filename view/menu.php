@@ -9,10 +9,11 @@
 				<li><a  href="?p=tuto">Mes tutoriels</a></li>
 				<li><a  href="?p=cv">Mon CV</a></li>
 				 </ul>
-
+				 
 				 <a href="?p=connect" class="btn">Se connecter</a>
-				<div class="mode">
+				 <a href="?p=message" class="btn"><i class="fa fa-comments"></i></a>
 				
+				<div class="mode">
 				<button class="dark" onclick="darkMode()"><i class="fas fa-moon"></i></button>
     			<button class="light" onclick="lightMode()"><i class='fas fa-sun'></i></button>
 				</div>
