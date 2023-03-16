@@ -23,7 +23,7 @@
                 <img src="../img/prefo-site.webp" alt="site-prefo">
             </div>
             <div class="side back">
-                <h3>cliquer sur le <a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/index.html"> <span>lien</span> </a> pour accéder à mon site de préformation. </h3>
+                <h3>cliquer sur le :<a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/index.html"> <span>lien</span> </a> pour accéder à mon site de préformation. </h3>
                 
             </div>
         </div>
