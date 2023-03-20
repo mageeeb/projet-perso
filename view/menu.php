@@ -13,10 +13,11 @@
 				 <a href="?p=connect" class="btn">Se connecter</a>
 				 <a href="?p=message" class="btn"><i class="fa fa-comments"></i></a>
 				
-				<div class="mode">
+				<!--<div class="mode">
 				<button class="dark" onclick="darkMode()"><i class="fas fa-moon"></i></button>
     			<button class="light" onclick="lightMode()"><i class='fas fa-sun'></i></button>
-				</div>
+				</div>-->
+				<button id="mybtn" onclick="darkmode()"><i class="fas fa-moon"></i></button>
 				
 			</nav>
 </div>
