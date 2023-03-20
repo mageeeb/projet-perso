@@ -15,7 +15,7 @@
     include "menu.php"
     ?>
     <div class="travail">
-    <h1>Voici mes travaux effectué </h1>
+    <h1>Voici les travaux que j'ai effectué </h1>
 
 <div class="card-container">
         <div class="card">
@@ -23,7 +23,7 @@
                 <img src="../img/prefo-site.webp" alt="site-prefo">
             </div>
             <div class="side back">
-                <h3>cliquer sur le :<a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/index.html"> <span>lien</span> </a> pour accéder à mon site de préformation. </h3>
+                <h3>Cliquez sur ce <a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/index.html"> <span>lien</span> </a> pour accéder à mon site de préformation. </h3>
                 
             </div>
         </div>
@@ -33,7 +33,7 @@
                 <img src="../img/bronks.webp" alt="bronks">
             </div>
             <div class="side back">
-                <h3>cliquer sur le <a target="_blank" href="https://2022.webdev-cf2m.be/magib/sitefigma/index.php"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'aplication de figma (Cours de disign).</h3>
+                <h3>Cliquez sur ce <a target="_blank" href="https://2022.webdev-cf2m.be/magib/sitefigma/index.php"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'application de figma (Cours de design).</h3>
                 
             </div>
         </div>
@@ -43,17 +43,17 @@
                 <img src="../img/3.PNG" alt="Brut">
             </div>
             <div class="side back">
-                <h3>cliquer sur le <a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/exposition/visite.html"> <span>lien</span></a> pour accéder à la page consacré à lavisite qu'on a fait en groupe à Brussels Museums. (cours Français) </h3>
+                <h3>Cliquez sur ce <a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/exposition/visite.html"> <span>lien</span></a> pour accéder à la page consacrée à la visite faite avec la classe à Experience.brussels (cours de Français). </h3>
                 
             </div>
         </div>
 
         <div class="card">
             <div class="side">
-                <img src="../img/brut.jpg" alt="Brut">
+                <img src="../img/cult.jpg" alt="senegal">
             </div>
             <div class="side back">
-                <h3>cliquer sur le <a target="_blank"  href="https://christianberst.com/artists/tomasz-machcinski">  <span>lien</span></a> pour accéder au site de Tomasz Machcinski qui est un artiste qui m'a marqué lors de notre visite à Brut. (cours Français)</h3>
+                <h3>Cliquez sur ce <a target="_blank"  href="https://2022.webdev-cf2m.be/magib/T.I-%201/">  <span>lien</span></a> pour accéder au site que j'ai fait pour le Ti1. <br> Voici une visite guidée du plus beau pays d'Afrique, le Sénégal.</h3>
                 
             </div>
         </div>

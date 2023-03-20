@@ -1,5 +1,5 @@
 
-.mode{
+/*.mode{
   padding: 5px;
   margin-right: 15px;
 
@@ -31,5 +31,19 @@ body {
 .dark {
   font-weight: 3px;
 }
-  }
+  }*/
+  body{
+    background: #fff;
+    color: #000;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.dark-mode{
+    background: #000;
+    color: #fff;
+}
   

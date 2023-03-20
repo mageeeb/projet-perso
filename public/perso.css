@@ -19,8 +19,8 @@ body{
 p{
     
     color: white;
-    font-size: 8px;
-    line-height:10px;
+    font-size: 6.5px;
+    line-height:8px;
     background-image: url(../img/noir.jpg);
     background-size: cover;
     background-position: center;
@@ -45,6 +45,7 @@ nav{
     margin-top: -20px;
     z-index: 10;
     
+    
 }
 
 span{
@@ -58,6 +59,7 @@ nav ul li{
 	list-style-type: none;
 	display: inline-block;
 	padding: 10px  20px;
+    text-align: right;
 }
 nav ul li a{
 	color: white;
@@ -211,7 +213,7 @@ h3{
     width: 250px;
 }
 h5{
-    color: white;
+    /*color: white;*/
     margin-left: 25px;
 }
 
@@ -229,17 +231,17 @@ h5{
     width: 750px;
     height: 500px;
     perspective: 1000px;
-    left: 34em;
-    top: 100px;
+    left: 25em;
+    top: 30px;
     grid-template-columns: 1fr 1fr;
     display: grid;
-    gap: 30px;
+    gap: 10px;
     
 }
 
 .card {
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
     transform-style: preserve-3d;
     transition: all 2s ease-in-out;
     
@@ -289,6 +291,16 @@ h5{
      /*width:100%;*/
 
 }
+
+/*----------------------------liens-----------------------*/
+h3{
+    font-size: 14px;
+    align-items: center;
+    margin-top: -5px;
+}
+h3 a{
+    text-decoration: none;
+}
 /*--------------------------------tuto-----------------*/
 .lien{
     position: relative;
@@ -300,14 +312,14 @@ h5{
 }
 .lien h5{
     color: black;
-    font-size: 15px;
+    font-size: 14px;
     width: 50%;
     position: relative;
     top: 5em;
 }
 .lien h6{
-    color: black;
-    font-size: 15px;
+    /*color: black;*/
+    font-size: 13px;
     width: 50%;
     position: relative;
     left: 1.5em;
@@ -331,7 +343,7 @@ h6{
     background-color: black;
     color: white;
     text-align: center;
-    height: 120px;
+    height: 80px;
 }
 .foot{
     margin-top: 15px;
@@ -347,8 +359,8 @@ h6{
     left: 46.5%;
   }
   .social a {
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -363,6 +375,8 @@ h6{
     transition: 0.3s;
   }
 
+ 
+
 /*---------------cv-------------------------------------*/
   .cv{
     text-align: center;
@@ -373,14 +387,16 @@ h6{
   /*--------------------Français----------------------*/
   .courfr{
     position: relative;
-    top: 8em;
+    top: 4em;
+    
   }
   
   .brut{
     text-align: center;
   }
+
   .brut img{
-    width: 200px;
+    width: 150px;
     position: relative;
     top: 25px;
   }
@@ -388,29 +404,61 @@ h6{
   #contenu {
     grid-area: contenu;
     align-self: start;
-    background-color: #EEEEEE;
+    /*background-color: #EEEEEE;*/
     width: 100%;
     position: relative;
-    left: 25px;
-    top: 80px;
-    bottom: 150px;
+    left: 5px;
+    top: 40px;
+   
     display: flex;
    
 }
 
 #contenu img {
     float:left;
-    width:150px;
+    width:80px;
     height:auto;
     font-weight: 300px;
     margin-right: 1em;
 }
 
-#contenu h5 {
+#contenu h6 {
     text-align: justify;
-    color: black;
-    width: 70%;
+    /*color: black;*/
+    width: 80%;
+    font-size: 15px;
     
+}
+
+/*-------------message--------------*/
+#header{
+    max-width: 1100px;
+    margin: 10em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px -10px grey;
+    box-sizing: border-box;
+
+}
+
+
+
+
+#monFormulaire{
+    position: relative;
+    bottom: 10px;
+    top: 1.5em;
+    
+}
+
+#monFormulaire input{
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -487,7 +535,7 @@ h6{
 
 #contenu img {
     float:left;
-    width:100px;
+    width:50px;
     height:auto;
     font-weight: 200px;
     margin-right: 1em;
@@ -497,7 +545,7 @@ h6{
     
     color: black;
     width: 70%;
-    font-size: 13px;
+    font-size: 10px;
     padding: 0px 15px;
     
 }
