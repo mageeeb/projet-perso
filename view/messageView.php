@@ -16,7 +16,7 @@
 <body>
    
         <header id="header">
-                <h3>Envoyez moi un message ou retour à la <a href="./">page d'accueil</a>  </h3>
+                <h3>Envoyez-moi un message ou retour à la <a href="./">page d'accueil</a>  </h3>
             
 
             <form id="monFormulaire" method="POST" action="" name="messages">

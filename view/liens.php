@@ -23,7 +23,7 @@
                 <img src="../img/w3school.png" alt="site">
             </div>
             <div class="side back">
-                <h3>Cliquez sur ce <a target="_blank" href="https://www.w3schools.com/"> <span>lien</span> </a> pour accéder à une  plateforme d'E-learning très complète qui reprend tous les languages de codage existants de HTML à PHP.</h3>
+                <h3>Cliquez sur ce <a target="_blank" href="https://www.w3schools.com/"> <span>lien</span> </a> pour accéder à une  plateforme d'E-learning très complète qui reprend tous les langages de codage existants de HTML à PHP.</h3>
                 
             </div>
         </div>
@@ -33,7 +33,7 @@
                 <img src="../img/maxresdefault.jpg" alt="bronks">
             </div>
             <div class="side back">
-                <h3>Cliquez sur le <a target="_blank" href="https://www.sololearn.com/profile/21787183"> <span>lien </span></a>pour accéder à l'application Sololearn qui met à disposition des cours avec des petits test de connaissances pour chaque chapitre! </h3>
+                <h3>Cliquez sur le <a target="_blank" href="https://www.sololearn.com/profile/21787183"> <span>lien </span></a>pour accéder à l'application Sololearn qui met à disposition des cours avec des petits tests de connaissances pour chaque chapitre! </h3>
                 
             </div>
         </div>
@@ -43,7 +43,7 @@
                 <img src="../img/mdn_web_docs_feature.webp" alt="Brut">
             </div>
             <div class="side back">
-                <h3>Voici le <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/javascript"> <span>lien</span></a> que je l'utilise pour me documenter en javascript & PHP. On trouve sur le site <span>MDN</span> diverses introductions et explications sur les languages les plus utilisés. </h3>
+                <h3>Voici le <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/javascript"> <span>lien</span></a> que je l'utilise pour me documenter en javascript & PHP. On trouve sur le site <span>MDN</span> diverses introductions et explications sur les langages les plus utilisés. </h3>
                 
             </div>
         </div>
