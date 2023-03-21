@@ -15,7 +15,7 @@
     include "menu.php"
     ?>
     <div class="travail">
-    <h1>Voici les travaux que j'ai effectué </h1>
+    <h1>Voici les travaux que j'ai effectués </h1>
 
 <div class="card-container">
         <div class="card">
@@ -33,7 +33,7 @@
                 <img src="../img/bronks.webp" alt="bronks">
             </div>
             <div class="side back">
-                <h3>Cliquez sur ce <a target="_blank" href="https://2022.webdev-cf2m.be/magib/sitefigma/index.php"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'application de figma (Cours de design).</h3>
+                <h3>Cliquez sur ce <a target="_blank" href="https://2022.webdev-cf2m.be/magib/sitefigma/index.php"> <span>lien</span></a> pour accéder au site que j'ai fait avec l'application de figma (cours de design).</h3>
                 
             </div>
         </div>
@@ -43,7 +43,7 @@
                 <img src="../img/3.PNG" alt="Brut">
             </div>
             <div class="side back">
-                <h3>Cliquez sur ce <a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/exposition/visite.html"> <span>lien</span></a> pour accéder à la page consacrée à la visite faite avec la classe à Experience.brussels (cours de Français). </h3>
+                <h3>Cliquez sur ce <a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/exposition/visite.html"> <span>lien</span></a> pour accéder à la page consacrée à la visite faite avec la classe à Experience.brussels (cours de français). </h3>
                 
             </div>
         </div>
